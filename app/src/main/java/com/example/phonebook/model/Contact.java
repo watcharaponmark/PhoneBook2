@@ -1,14 +1,13 @@
 package com.example.phonebook.model;
 
-/**
- * Created by Mark on 10/23/16.
- */
 public class Contact {
     private String mName;
     private String mPhonenumber;
-    public Contact(String mName, String mPhonenumber) {
+    private String mimage;
+    public Contact(String mName, String mPhonenumber,String mimage) {
         this.mName = mName;
         this.mPhonenumber = mPhonenumber;
+        this.mimage=mimage;
     }
     public String getmName() {
         return mName;
@@ -16,6 +15,14 @@ public class Contact {
 
     public String getmPhonenumber() {
         return mPhonenumber;
+    }
+
+    public String getmImage() {
+        return mimage;
+    }
+
+    public void setMimage(String mimage) {
+        this.mimage = mimage;
     }
 
     public void setmName(String mName) {
